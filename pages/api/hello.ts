@@ -2,9 +2,13 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Data = {
-  name: string
+  date: string
 }
 
 export default (req: NextApiRequest, res: NextApiResponse<Data>) => {
-  res.status(200).json({ name: 'John Doe' })
+  const date = new Date()
+
+  res.setHeader('Cache-Control', 's-maxage=10, stale-while-revalidate')
+
+  res.status(200).json({ date: date.toUTCString() })
 }
