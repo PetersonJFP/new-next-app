@@ -27,10 +27,21 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
     "space-before-function-paren": "off",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "prettier/prettier": [
+      "error",
+      {
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false,
+        "printWidth": 80,
+        "semi": false,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "all"
+      }
+    ]
   }
 }
