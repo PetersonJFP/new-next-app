@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import WhatsAppIcon from 'shared/WhatsAppIcon'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="flex justify-center items-center w-full h-screen">
         <h1 className="text-4xl text-yellow-600 font-extrabold">Hello world</h1>
       </div>
+      <WhatsAppIcon phoneNumber="51999700508" />
     </div>
   )
 }
