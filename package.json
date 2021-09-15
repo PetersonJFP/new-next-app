@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "css": "TAILWIND_MODE=watch NODE_ENV=development postcss ./styles/globals.css -o ./styles/tailwind.css -w",
+    "tw:watch": "TAILWIND_MODE=watch NODE_ENV=development postcss ./styles/globals.css -o ./styles/tailwind.css -w",
     "build": "next build",
     "start": "next start"
   },
